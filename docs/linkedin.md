@@ -24,12 +24,25 @@ It is **off by default**.
 
 ## Turning it on
 
+LinkedIn runs in its own container (Compose profile `linkedin`), and needs two switches:
+
 ```yaml
+# config.yaml
 linkedin:
   enabled: true
   searches:
     - { keywords: "senior (backend OR java OR kotlin)", location: "Spain" }
 ```
+
+```bash
+docker compose --profile linkedin up -d
+docker compose logs -f linkedin
+```
+
+Turn it off with `docker compose stop linkedin` and `enabled: false`. Plain `docker compose up -d` never starts it.
+Both containers share the database: the hourly request budget is counted across them, and only one process scores
+at a time (PostgreSQL advisory lock), so nothing is scored or alerted twice. Step-by-step guide in the
+[README](../README.md#linkedin-opt-in).
 
 Notes from real use:
 - Keywords match the title **and** the description; `OR` works, `NOT` is ignored. Seniority/remote filtering

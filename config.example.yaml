@@ -44,6 +44,7 @@ notify:
 # OPT-IN: LinkedIn guest search. Off by default. LinkedIn's terms do not allow automated access - read
 # docs/linkedin.md and decide for yourself. Pacing floors (15 s between requests, 30 min between cycles,
 # max 60 requests/hour) are enforced in code and cannot be lowered here.
+# Runs in its own container: after enabling, start it with `docker compose --profile linkedin up -d`.
 linkedin:
   enabled: false
   searches:

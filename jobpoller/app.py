@@ -97,11 +97,31 @@ def _install_signals() -> None:
     signal.signal(signal.SIGINT, handler)
 
 
+TASK_NAMES = ("boards", "discovery", "linkedin")
+LINKEDIN_CONTAINER_HINT = "docker compose --profile linkedin up -d"
+
+
 def score_and_notify(cfg: Config, db: Store) -> dict:
-    return scorer.score_pending(cfg.scorer, db, min_notify=cfg.notify.min_score, console=cfg.notify.console)
+    """Score pending jobs and notify. Only one process scores at a time (poller and linkedin container share the
+    database): if another one holds the lock, it will pick these jobs up - skip instead of scoring twice."""
+    if not db.try_lock("scoring"):
+        return {"skipped": "another process is scoring"}
+    try:
+        return scorer.score_pending(cfg.scorer, db, min_notify=cfg.notify.min_score, console=cfg.notify.console)
+    finally:
+        db.unlock("scoring")
 
 
-def tasks(cfg: Config, db: Store) -> list[Task]:
+def tasks(cfg: Config, db: Store, only: set[str] | None = None, skip: set[str] | None = None) -> list[Task]:
+    """The scheduled tasks for this process. `only` / `skip` split them across containers:
+    the poller container runs `--skip linkedin`, the opt-in linkedin container runs `--only linkedin`."""
+    wanted = set(only or TASK_NAMES) - set(skip or ())
+    if "linkedin" not in wanted and cfg.linkedin.enabled:
+        log.info("linkedin.enabled is true - LinkedIn runs in its own container, not here (start it with: %s)",
+                 LINKEDIN_CONTAINER_HINT)
+    if "linkedin" in wanted and not cfg.linkedin.enabled and only:
+        log.warning("this process should run LinkedIn, but linkedin.enabled is false in config.yaml - idle. "
+                    "Set it to true (and add searches), then restart, or stop this container.")
     t = []
     if cfg.job_boards.enabled:
         t.append(Task("boards", timedelta(minutes=cfg.job_boards.interval_minutes),
@@ -116,7 +136,7 @@ def tasks(cfg: Config, db: Store) -> list[Task]:
                         "not allow automated access - you are responsible for using it.")
             t.append(Task("linkedin", timedelta(minutes=cfg.linkedin.interval_minutes),
                           lambda: linkedin_runner.run_cycle(cfg, db)))
-    return t
+    return [x for x in t if x.name in wanted]
 
 
 def run_once(cfg: Config, db: Store) -> dict:
@@ -129,12 +149,13 @@ def run_once(cfg: Config, db: Store) -> dict:
     return out
 
 
-def run_forever(cfg: Config, db: Store) -> None:
+def run_forever(cfg: Config, db: Store, only: set[str] | None = None, skip: set[str] | None = None) -> None:
     _install_signals()
     try:
-        sync_seed(cfg, db)
-        sync_config(cfg, db)
-        ts = tasks(cfg, db)
+        ts = tasks(cfg, db, only, skip)
+        if any(t.name == "boards" for t in ts):
+            sync_seed(cfg, db)
+            sync_config(cfg, db)
         now = utcnow()
         for t in ts:
             t.next_at = now + (timedelta(minutes=5) if t.name == "discovery" else timedelta())
@@ -159,6 +180,6 @@ def run_forever(cfg: Config, db: Store) -> None:
                     raise
                 except Exception:
                     log.exception("scoring failed - jobs stay pending")
-            time.sleep(max(1.0, min((t.next_at - utcnow()).total_seconds() for t in ts) if ts else 60.0))
+            time.sleep(max(1.0, min((t.next_at - utcnow()).total_seconds() for t in ts)) if ts else 60.0)
     except Stop:
         log.info("stopped")

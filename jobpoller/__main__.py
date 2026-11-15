@@ -28,7 +28,9 @@ def _setup_logging() -> None:
 def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(prog="job-poller")
     sub = p.add_subparsers(dest="cmd", required=True)
-    sub.add_parser("run")
+    r = sub.add_parser("run", help="the service loop")
+    r.add_argument("--only", nargs="+", choices=["boards", "discovery", "linkedin"], help="run only these tasks")
+    r.add_argument("--skip", nargs="+", choices=["boards", "discovery", "linkedin"], help="run all but these tasks")
     sub.add_parser("once")
     sub.add_parser("test-notify")
     sub.add_parser("discover")
@@ -69,7 +71,7 @@ def main(argv: list[str] | None = None) -> int:
     try:
         if args.cmd == "run":
             from .app import run_forever
-            run_forever(cfg, db)
+            run_forever(cfg, db, set(args.only or ()) or None, set(args.skip or ()) or None)
         elif args.cmd == "once":
             from .app import run_once
             print(json.dumps(run_once(cfg, db), indent=1, default=str))

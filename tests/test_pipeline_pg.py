@@ -116,3 +116,24 @@ def test_discovery_adds_found_board_and_records_none(db, cfg, monkeypatch):
     disc = db.discovery()
     assert disc["acme"]["status"] == "found" and disc["nobody"]["status"] == "none"
     assert boards_runner.discover(cfg, db)["due"] == 0              # nothing due again until the re-check
+
+
+def test_only_one_process_scores_at_a_time(db, cfg):
+    other = Store(URL)                       # e.g. the linkedin container
+    try:
+        assert other.try_lock("scoring")
+        assert app.score_and_notify(cfg, db) == {"skipped": "another process is scoring"}
+        other.unlock("scoring")
+        assert "skipped" not in app.score_and_notify(cfg, db)
+        assert other.try_lock("scoring")     # released again after scoring
+    finally:
+        other.close()
+
+
+def test_concurrent_migrations_take_turns(db):
+    a, b = Store(URL), Store(URL)            # poller + linkedin starting at once: no error, applied once
+    try:
+        assert a.migrate() == [] and b.migrate() == []
+    finally:
+        a.close()
+        b.close()

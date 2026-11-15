@@ -46,7 +46,23 @@ class Store:
 
     # ---- schema -------------------------------------------------------------
     def migrate(self) -> list[str]:
-        """Apply migrations/NNN_*.sql that are not applied yet, each in its own transaction."""
+        """Apply migrations/NNN_*.sql that are not applied yet, each in its own transaction.
+        Several containers may start at once (poller + linkedin): an advisory lock makes them take turns."""
+        self.conn.execute("SELECT pg_advisory_lock(hashtext('jobpoller:migrate'))")
+        try:
+            return self._migrate()
+        finally:
+            self.conn.execute("SELECT pg_advisory_unlock(hashtext('jobpoller:migrate'))")
+
+    def try_lock(self, name: str) -> bool:
+        """Session advisory lock without waiting: True if this connection now holds `name`."""
+        r = self._one("SELECT pg_try_advisory_lock(hashtext(%s)) AS ok", (f"jobpoller:{name}",))
+        return bool(r and r["ok"])
+
+    def unlock(self, name: str) -> None:
+        self.conn.execute("SELECT pg_advisory_unlock(hashtext(%s))", (f"jobpoller:{name}",))
+
+    def _migrate(self) -> list[str]:
         self.conn.execute("CREATE TABLE IF NOT EXISTS schema_migrations "
                           "(version TEXT PRIMARY KEY, applied_at TIMESTAMPTZ NOT NULL DEFAULT now())")
         done = {r["version"] for r in self.conn.execute("SELECT version FROM schema_migrations")}

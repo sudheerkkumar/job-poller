@@ -1,5 +1,6 @@
-# docker compose up -d        -> Postgres + the poller
-# docker compose logs -f poller
+# docker compose up -d                       -> Postgres + the poller (company job boards)
+# docker compose --profile linkedin up -d    -> also the opt-in LinkedIn poller (needs linkedin.enabled: true)
+# docker compose logs -f poller linkedin
 services:
   db:
     image: postgres:16-alpine
@@ -30,4 +31,24 @@ services:
       JOBPOLLER_CONFIG: /app/config.yaml
     volumes:
       - ./config.yaml:/app/config.yaml:ro
+    command: ["python", "-m", "jobpoller", "run", "--skip", "linkedin"]
     mem_limit: 512m
+
+  # OPT-IN: LinkedIn guest search in its own container - started only with `--profile linkedin`.
+  # Same image, database and config; read docs/linkedin.md before turning it on.
+  linkedin:
+    profiles: ["linkedin"]
+    image: job-poller:local
+    build: { context: ., target: app }
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    env_file: .env
+    environment:
+      DATABASE_URL: postgresql://jobpoller:${POSTGRES_PASSWORD:-jobpoller}@db:5432/jobpoller
+      JOBPOLLER_CONFIG: /app/config.yaml
+    volumes:
+      - ./config.yaml:/app/config.yaml:ro
+    command: ["python", "-m", "jobpoller", "run", "--only", "linkedin"]
+    mem_limit: 256m

@@ -1,5 +1,17 @@
 # Architecture
 
+## Containers
+
+| Service | Image | Runs | Started by |
+|---|---|---|---|
+| `db` | postgres:16-alpine | PostgreSQL, data in `./data/pg` | `docker compose up -d` |
+| `poller` | job-poller | `run --skip linkedin`: board polls, discovery, scoring, alerts | `docker compose up -d` |
+| `linkedin` | job-poller (same image) | `run --only linkedin`: LinkedIn cycles, scoring of what it finds | `docker compose --profile linkedin up -d` (opt-in) |
+
+Shared database, two writers: migrations take a PostgreSQL advisory lock at start-up, and scoring runs under a
+second advisory lock (`pg_try_advisory_lock`) - whichever process holds it scores, the other skips and leaves the
+jobs to it. Inserts are idempotent (`ON CONFLICT DO NOTHING`), so the rest needs no coordination.
+
 ## Components
 
 | Module | Responsibility |
