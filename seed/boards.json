@@ -1,0 +1,1733 @@
+{
+ "generated": "2026-11-15",
+ "method": "Common Crawl URL index (2 crawls) -> each board's public API once -> regions where it had open jobs. Refresh: python scripts/refresh_seed.py",
+ "boards": [
+  {
+   "id": "ashby:abound",
+   "ats": "ashby",
+   "slug": "abound",
+   "company": "abound",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 14
+  },
+  {
+   "id": "ashby:adaption",
+   "ats": "ashby",
+   "slug": "adaption",
+   "company": "adaption",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 11
+  },
+  {
+   "id": "ashby:airapps",
+   "ats": "ashby",
+   "slug": "airapps",
+   "company": "airapps",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 498
+  },
+  {
+   "id": "ashby:airwallex",
+   "ats": "ashby",
+   "slug": "airwallex",
+   "company": "airwallex",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 483
+  },
+  {
+   "id": "ashby:alan",
+   "ats": "ashby",
+   "slug": "alan",
+   "company": "alan",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 138
+  },
+  {
+   "id": "ashby:amenitiz",
+   "ats": "ashby",
+   "slug": "amenitiz",
+   "company": "amenitiz",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 22
+  },
+  {
+   "id": "ashby:openai",
+   "ats": "ashby",
+   "slug": "openai",
+   "company": "openai",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 840
+  },
+  {
+   "id": "ashby:orchard",
+   "ats": "ashby",
+   "slug": "orchard",
+   "company": "orchard",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 27
+  },
+  {
+   "id": "ashby:oyster",
+   "ats": "ashby",
+   "slug": "oyster",
+   "company": "oyster",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 21
+  },
+  {
+   "id": "ashby:pebl",
+   "ats": "ashby",
+   "slug": "pebl",
+   "company": "pebl",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 39
+  },
+  {
+   "id": "ashby:pennylane",
+   "ats": "ashby",
+   "slug": "pennylane",
+   "company": "pennylane",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 202
+  },
+  {
+   "id": "ashby:percona",
+   "ats": "ashby",
+   "slug": "percona",
+   "company": "percona",
+   "host": null,
+   "regions": [
+    "spain",
+    "europe-remote"
+   ],
+   "jobs_at_scan": 13
+  },
+  {
+   "id": "ashby:perk",
+   "ats": "ashby",
+   "slug": "perk",
+   "company": "perk",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 117
+  },
+  {
+   "id": "ashby:phrase",
+   "ats": "ashby",
+   "slug": "phrase",
+   "company": "phrase",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 6
+  },
+  {
+   "id": "ashby:plancraft",
+   "ats": "ashby",
+   "slug": "plancraft",
+   "company": "plancraft",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 11
+  },
+  {
+   "id": "ashby:platform-engineering",
+   "ats": "ashby",
+   "slug": "platform-engineering",
+   "company": "platform-engineering",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 2
+  },
+  {
+   "id": "ashby:playlab",
+   "ats": "ashby",
+   "slug": "playlab",
+   "company": "playlab",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 8
+  },
+  {
+   "id": "ashby:playson",
+   "ats": "ashby",
+   "slug": "playson",
+   "company": "playson",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 22
+  },
+  {
+   "id": "ashby:pleo",
+   "ats": "ashby",
+   "slug": "pleo",
+   "company": "pleo",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 35
+  },
+  {
+   "id": "ashby:pliant",
+   "ats": "ashby",
+   "slug": "pliant",
+   "company": "pliant",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 36
+  },
+  {
+   "id": "ashby:pod-network",
+   "ats": "ashby",
+   "slug": "pod-network",
+   "company": "pod-network",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 4
+  },
+  {
+   "id": "ashby:polar",
+   "ats": "ashby",
+   "slug": "polar",
+   "company": "polar",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 3
+  },
+  {
+   "id": "ashby:polygon-labs",
+   "ats": "ashby",
+   "slug": "polygon-labs",
+   "company": "polygon-labs",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 5
+  },
+  {
+   "id": "ashby:poolside",
+   "ats": "ashby",
+   "slug": "poolside",
+   "company": "poolside",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 4
+  },
+  {
+   "id": "ashby:posthog",
+   "ats": "ashby",
+   "slug": "posthog",
+   "company": "posthog",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 10
+  },
+  {
+   "id": "ashby:powerline",
+   "ats": "ashby",
+   "slug": "powerline",
+   "company": "powerline",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 2
+  },
+  {
+   "id": "ashby:pragmatike",
+   "ats": "ashby",
+   "slug": "pragmatike",
+   "company": "pragmatike",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 59
+  },
+  {
+   "id": "ashby:preply",
+   "ats": "ashby",
+   "slug": "preply",
+   "company": "preply",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 120
+  },
+  {
+   "id": "ashby:progress-partners",
+   "ats": "ashby",
+   "slug": "progress-partners",
+   "company": "progress-partners",
+   "host": null,
+   "regions": [
+    "spain",
+    "europe-remote"
+   ],
+   "jobs_at_scan": 5
+  },
+  {
+   "id": "ashby:prosper-ai",
+   "ats": "ashby",
+   "slug": "prosper-ai",
+   "company": "prosper-ai",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 12
+  },
+  {
+   "id": "ashby:rain",
+   "ats": "ashby",
+   "slug": "rain",
+   "company": "rain",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 45
+  },
+  {
+   "id": "ashby:rapdev",
+   "ats": "ashby",
+   "slug": "rapdev",
+   "company": "rapdev",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 7
+  },
+  {
+   "id": "ashby:reedsy",
+   "ats": "ashby",
+   "slug": "reedsy",
+   "company": "reedsy",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 18
+  },
+  {
+   "id": "ashby:reflow",
+   "ats": "ashby",
+   "slug": "reflow",
+   "company": "reflow",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 15
+  },
+  {
+   "id": "ashby:rehire",
+   "ats": "ashby",
+   "slug": "rehire",
+   "company": "rehire",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 88
+  },
+  {
+   "id": "ashby:renuity",
+   "ats": "ashby",
+   "slug": "renuity",
+   "company": "renuity",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 408
+  },
+  {
+   "id": "ashby:rerun",
+   "ats": "ashby",
+   "slug": "rerun",
+   "company": "rerun",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 5
+  },
+  {
+   "id": "ashby:resend",
+   "ats": "ashby",
+   "slug": "resend",
+   "company": "resend",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 14
+  },
+  {
+   "id": "ashby:restream",
+   "ats": "ashby",
+   "slug": "restream",
+   "company": "restream",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 9
+  },
+  {
+   "id": "ashby:revenuecat",
+   "ats": "ashby",
+   "slug": "revenuecat",
+   "company": "revenuecat",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 10
+  },
+  {
+   "id": "ashby:robco",
+   "ats": "ashby",
+   "slug": "robco",
+   "company": "robco",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 33
+  },
+  {
+   "id": "ashby:roompricegenie",
+   "ats": "ashby",
+   "slug": "roompricegenie",
+   "company": "roompricegenie",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 6
+  },
+  {
+   "id": "ashby:ruby-labs",
+   "ats": "ashby",
+   "slug": "ruby-labs",
+   "company": "ruby-labs",
+   "host": null,
+   "regions": [
+    "spain",
+    "europe-remote"
+   ],
+   "jobs_at_scan": 34
+  },
+  {
+   "id": "ashby:runpod",
+   "ats": "ashby",
+   "slug": "runpod",
+   "company": "runpod",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 22
+  },
+  {
+   "id": "ashby:salmon-group",
+   "ats": "ashby",
+   "slug": "salmon-group",
+   "company": "salmon-group",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 61
+  },
+  {
+   "id": "ashby:sanity",
+   "ats": "ashby",
+   "slug": "sanity",
+   "company": "sanity",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 31
+  },
+  {
+   "id": "ashby:sardine",
+   "ats": "ashby",
+   "slug": "sardine",
+   "company": "sardine",
+   "host": null,
+   "regions": [
+    "spain",
+    "europe-remote"
+   ],
+   "jobs_at_scan": 40
+  },
+  {
+   "id": "ashby:satispay",
+   "ats": "ashby",
+   "slug": "satispay",
+   "company": "satispay",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 81
+  },
+  {
+   "id": "ashby:savvymoney",
+   "ats": "ashby",
+   "slug": "savvymoney",
+   "company": "savvymoney",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 15
+  },
+  {
+   "id": "ashby:scarlet",
+   "ats": "ashby",
+   "slug": "scarlet",
+   "company": "scarlet",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 19
+  },
+  {
+   "id": "ashby:scoreplay",
+   "ats": "ashby",
+   "slug": "scoreplay",
+   "company": "scoreplay",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 10
+  },
+  {
+   "id": "ashby:searchapi",
+   "ats": "ashby",
+   "slug": "searchapi",
+   "company": "searchapi",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 12
+  },
+  {
+   "id": "ashby:secfix",
+   "ats": "ashby",
+   "slug": "secfix",
+   "company": "secfix",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 18
+  },
+  {
+   "id": "ashby:sensorfact",
+   "ats": "ashby",
+   "slug": "sensorfact",
+   "company": "sensorfact",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 15
+  },
+  {
+   "id": "ashby:sentient",
+   "ats": "ashby",
+   "slug": "sentient",
+   "company": "sentient",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 2
+  },
+  {
+   "id": "ashby:sereact",
+   "ats": "ashby",
+   "slug": "sereact",
+   "company": "sereact",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 46
+  },
+  {
+   "id": "ashby:siena",
+   "ats": "ashby",
+   "slug": "siena",
+   "company": "siena",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 7
+  },
+  {
+   "id": "ashby:sierra",
+   "ats": "ashby",
+   "slug": "sierra",
+   "company": "sierra",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 198
+  },
+  {
+   "id": "ashby:singular",
+   "ats": "ashby",
+   "slug": "singular",
+   "company": "singular",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 19
+  },
+  {
+   "id": "ashby:siteminder",
+   "ats": "ashby",
+   "slug": "siteminder",
+   "company": "siteminder",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 28
+  },
+  {
+   "id": "ashby:skelar",
+   "ats": "ashby",
+   "slug": "skelar",
+   "company": "skelar",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 115
+  },
+  {
+   "id": "ashby:skymavis",
+   "ats": "ashby",
+   "slug": "skymavis",
+   "company": "skymavis",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 6
+  },
+  {
+   "id": "ashby:slate",
+   "ats": "ashby",
+   "slug": "slate",
+   "company": "slate",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 3
+  },
+  {
+   "id": "ashby:socket",
+   "ats": "ashby",
+   "slug": "socket",
+   "company": "socket",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 25
+  },
+  {
+   "id": "ashby:somnia",
+   "ats": "ashby",
+   "slug": "somnia",
+   "company": "somnia",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 1
+  },
+  {
+   "id": "ashby:sosafe",
+   "ats": "ashby",
+   "slug": "sosafe",
+   "company": "sosafe",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 30
+  },
+  {
+   "id": "ashby:sparta-commodities",
+   "ats": "ashby",
+   "slug": "sparta-commodities",
+   "company": "sparta-commodities",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 16
+  },
+  {
+   "id": "ashby:sphere",
+   "ats": "ashby",
+   "slug": "sphere",
+   "company": "sphere",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 17
+  },
+  {
+   "id": "ashby:splitmetrics",
+   "ats": "ashby",
+   "slug": "splitmetrics",
+   "company": "splitmetrics",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 8
+  },
+  {
+   "id": "ashby:squads",
+   "ats": "ashby",
+   "slug": "squads",
+   "company": "squads",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 6
+  },
+  {
+   "id": "ashby:stack-ai",
+   "ats": "ashby",
+   "slug": "stack-ai",
+   "company": "stack-ai",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 14
+  },
+  {
+   "id": "ashby:standardbots",
+   "ats": "ashby",
+   "slug": "standardbots",
+   "company": "standardbots",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 33
+  },
+  {
+   "id": "ashby:stellar",
+   "ats": "ashby",
+   "slug": "stellar",
+   "company": "stellar",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 20
+  },
+  {
+   "id": "ashby:stream",
+   "ats": "ashby",
+   "slug": "stream",
+   "company": "stream",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 6
+  },
+  {
+   "id": "ashby:sunrise",
+   "ats": "ashby",
+   "slug": "sunrise",
+   "company": "sunrise",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 9
+  },
+  {
+   "id": "ashby:sweatpals",
+   "ats": "ashby",
+   "slug": "sweatpals",
+   "company": "sweatpals",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 2
+  },
+  {
+   "id": "ashby:synthesia",
+   "ats": "ashby",
+   "slug": "synthesia",
+   "company": "synthesia",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 31
+  },
+  {
+   "id": "ashby:talkiatry",
+   "ats": "ashby",
+   "slug": "talkiatry",
+   "company": "talkiatry",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 182
+  },
+  {
+   "id": "ashby:tandem-health",
+   "ats": "ashby",
+   "slug": "tandem-health",
+   "company": "tandem-health",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 76
+  },
+  {
+   "id": "ashby:tebi",
+   "ats": "ashby",
+   "slug": "tebi",
+   "company": "tebi",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 23
+  },
+  {
+   "id": "ashby:techtorch",
+   "ats": "ashby",
+   "slug": "techtorch",
+   "company": "techtorch",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 8
+  },
+  {
+   "id": "ashby:tem",
+   "ats": "ashby",
+   "slug": "tem",
+   "company": "tem",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 24
+  },
+  {
+   "id": "ashby:tempo-io",
+   "ats": "ashby",
+   "slug": "tempo-io",
+   "company": "tempo-io",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 14
+  },
+  {
+   "id": "ashby:tenex",
+   "ats": "ashby",
+   "slug": "tenex",
+   "company": "tenex",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 40
+  },
+  {
+   "id": "ashby:testgorilla",
+   "ats": "ashby",
+   "slug": "testgorilla",
+   "company": "testgorilla",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 2
+  },
+  {
+   "id": "ashby:teya",
+   "ats": "ashby",
+   "slug": "teya",
+   "company": "teya",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 96
+  },
+  {
+   "id": "ashby:the-rec-hub",
+   "ats": "ashby",
+   "slug": "the-rec-hub",
+   "company": "the-rec-hub",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 19
+  },
+  {
+   "id": "ashby:tigerdata",
+   "ats": "ashby",
+   "slug": "tigerdata",
+   "company": "tigerdata",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 4
+  },
+  {
+   "id": "ashby:tilthq",
+   "ats": "ashby",
+   "slug": "tilthq",
+   "company": "tilthq",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 22
+  },
+  {
+   "id": "ashby:trading212",
+   "ats": "ashby",
+   "slug": "trading212",
+   "company": "trading212",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 62
+  },
+  {
+   "id": "ashby:trainline",
+   "ats": "ashby",
+   "slug": "trainline",
+   "company": "trainline",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 35
+  },
+  {
+   "id": "ashby:tremendous",
+   "ats": "ashby",
+   "slug": "tremendous",
+   "company": "tremendous",
+   "host": null,
+   "regions": [
+    "spain",
+    "europe-remote"
+   ],
+   "jobs_at_scan": 30
+  },
+  {
+   "id": "ashby:trener-robotics",
+   "ats": "ashby",
+   "slug": "trener-robotics",
+   "company": "trener-robotics",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 7
+  },
+  {
+   "id": "ashby:trm-labs",
+   "ats": "ashby",
+   "slug": "trm-labs",
+   "company": "trm-labs",
+   "host": null,
+   "regions": [
+    "spain",
+    "europe-remote"
+   ],
+   "jobs_at_scan": 118
+  },
+  {
+   "id": "ashby:uberall",
+   "ats": "ashby",
+   "slug": "uberall",
+   "company": "uberall",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 6
+  },
+  {
+   "id": "ashby:uipath",
+   "ats": "ashby",
+   "slug": "uipath",
+   "company": "uipath",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 99
+  },
+  {
+   "id": "ashby:unicornpro",
+   "ats": "ashby",
+   "slug": "unicornpro",
+   "company": "unicornpro",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 4
+  },
+  {
+   "id": "ashby:vitvio",
+   "ats": "ashby",
+   "slug": "vitvio",
+   "company": "vitvio",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 3
+  },
+  {
+   "id": "ashby:volta",
+   "ats": "ashby",
+   "slug": "volta",
+   "company": "volta",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 43
+  },
+  {
+   "id": "ashby:voltrac",
+   "ats": "ashby",
+   "slug": "voltrac",
+   "company": "voltrac",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 5
+  },
+  {
+   "id": "ashby:voodoo",
+   "ats": "ashby",
+   "slug": "voodoo",
+   "company": "voodoo",
+   "host": null,
+   "regions": [
+    "spain",
+    "europe-remote"
+   ],
+   "jobs_at_scan": 102
+  },
+  {
+   "id": "ashby:wayflyer",
+   "ats": "ashby",
+   "slug": "wayflyer",
+   "company": "wayflyer",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 14
+  },
+  {
+   "id": "ashby:wetravel",
+   "ats": "ashby",
+   "slug": "wetravel",
+   "company": "wetravel",
+   "host": null,
+   "regions": [
+    "spain",
+    "europe-remote"
+   ],
+   "jobs_at_scan": 14
+  },
+  {
+   "id": "ashby:wincent",
+   "ats": "ashby",
+   "slug": "wincent",
+   "company": "wincent",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 16
+  },
+  {
+   "id": "ashby:windranger",
+   "ats": "ashby",
+   "slug": "windranger",
+   "company": "windranger",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 7
+  },
+  {
+   "id": "ashby:wundergraph",
+   "ats": "ashby",
+   "slug": "wundergraph",
+   "company": "wundergraph",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 4
+  },
+  {
+   "id": "ashby:xbowcareers",
+   "ats": "ashby",
+   "slug": "xbowcareers",
+   "company": "xbowcareers",
+   "host": null,
+   "regions": [
+    "spain",
+    "europe-remote"
+   ],
+   "jobs_at_scan": 3
+  },
+  {
+   "id": "ashby:xds",
+   "ats": "ashby",
+   "slug": "xds",
+   "company": "xds",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 28
+  },
+  {
+   "id": "ashby:yazio",
+   "ats": "ashby",
+   "slug": "yazio",
+   "company": "yazio",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 3
+  },
+  {
+   "id": "ashby:ygo",
+   "ats": "ashby",
+   "slug": "ygo",
+   "company": "ygo",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 3
+  },
+  {
+   "id": "ashby:zapier",
+   "ats": "ashby",
+   "slug": "zapier",
+   "company": "zapier",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 10
+  },
+  {
+   "id": "ashby:zeal-network",
+   "ats": "ashby",
+   "slug": "zeal-network",
+   "company": "zeal-network",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 25
+  },
+  {
+   "id": "ashby:zed",
+   "ats": "ashby",
+   "slug": "zed",
+   "company": "zed",
+   "host": null,
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 2
+  },
+  {
+   "id": "ashby:znanylekarz",
+   "ats": "ashby",
+   "slug": "znanylekarz",
+   "company": "znanylekarz",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 10
+  },
+  {
+   "id": "ashby:zuru",
+   "ats": "ashby",
+   "slug": "zuru",
+   "company": "zuru",
+   "host": null,
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 95
+  },
+  {
+   "id": "lever:aavelabs",
+   "ats": "lever",
+   "slug": "aavelabs",
+   "company": "aavelabs",
+   "host": "api.eu.lever.co",
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 13
+  },
+  {
+   "id": "lever:airalo",
+   "ats": "lever",
+   "slug": "airalo",
+   "company": "airalo",
+   "host": "api.lever.co",
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 13
+  },
+  {
+   "id": "lever:airslate",
+   "ats": "lever",
+   "slug": "airslate",
+   "company": "airslate",
+   "host": "api.lever.co",
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 17
+  },
+  {
+   "id": "lever:appen-2",
+   "ats": "lever",
+   "slug": "appen-2",
+   "company": "appen-2",
+   "host": "api.lever.co",
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 28
+  },
+  {
+   "id": "lever:bluelightconsulting",
+   "ats": "lever",
+   "slug": "bluelightconsulting",
+   "company": "bluelightconsulting",
+   "host": "api.lever.co",
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 653
+  },
+  {
+   "id": "lever:bv",
+   "ats": "lever",
+   "slug": "bv",
+   "company": "bv",
+   "host": "api.lever.co",
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 12
+  },
+  {
+   "id": "lever:coinspaid",
+   "ats": "lever",
+   "slug": "coinspaid",
+   "company": "coinspaid",
+   "host": "api.eu.lever.co",
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 33
+  },
+  {
+   "id": "lever:despegar",
+   "ats": "lever",
+   "slug": "despegar",
+   "company": "despegar",
+   "host": "api.lever.co",
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 121
+  },
+  {
+   "id": "lever:diabolocom",
+   "ats": "lever",
+   "slug": "diabolocom",
+   "company": "diabolocom",
+   "host": "api.eu.lever.co",
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 13
+  },
+  {
+   "id": "lever:finn",
+   "ats": "lever",
+   "slug": "finn",
+   "company": "finn",
+   "host": "api.lever.co",
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 30
+  },
+  {
+   "id": "lever:getwingapp",
+   "ats": "lever",
+   "slug": "getwingapp",
+   "company": "getwingapp",
+   "host": "api.lever.co",
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 390
+  },
+  {
+   "id": "lever:ghj",
+   "ats": "lever",
+   "slug": "ghj",
+   "company": "ghj",
+   "host": "api.lever.co",
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 120
+  },
+  {
+   "id": "lever:goodleap",
+   "ats": "lever",
+   "slug": "goodleap",
+   "company": "goodleap",
+   "host": "api.lever.co",
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 23
+  },
+  {
+   "id": "lever:gopuff",
+   "ats": "lever",
+   "slug": "gopuff",
+   "company": "gopuff",
+   "host": "api.lever.co",
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 777
+  },
+  {
+   "id": "lever:karllagerfeld",
+   "ats": "lever",
+   "slug": "karllagerfeld",
+   "company": "karllagerfeld",
+   "host": "api.eu.lever.co",
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 53
+  },
+  {
+   "id": "lever:lionbridge",
+   "ats": "lever",
+   "slug": "lionbridge",
+   "company": "lionbridge",
+   "host": "api.eu.lever.co",
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 48
+  },
+  {
+   "id": "lever:moonpay",
+   "ats": "lever",
+   "slug": "moonpay",
+   "company": "moonpay",
+   "host": "api.lever.co",
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 21
+  },
+  {
+   "id": "lever:offchainlabs",
+   "ats": "lever",
+   "slug": "offchainlabs",
+   "company": "offchainlabs",
+   "host": "api.lever.co",
+   "regions": [
+    "europe-remote"
+   ],
+   "jobs_at_scan": 14
+  },
+  {
+   "id": "lever:olx",
+   "ats": "lever",
+   "slug": "olx",
+   "company": "olx",
+   "host": "api.eu.lever.co",
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 51
+  },
+  {
+   "id": "lever:oni",
+   "ats": "lever",
+   "slug": "oni",
+   "company": "oni",
+   "host": "api.eu.lever.co",
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 14
+  },
+  {
+   "id": "lever:orasio",
+   "ats": "lever",
+   "slug": "orasio",
+   "company": "orasio",
+   "host": "api.eu.lever.co",
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 11
+  },
+  {
+   "id": "lever:penumbrainc",
+   "ats": "lever",
+   "slug": "penumbrainc",
+   "company": "penumbrainc",
+   "host": "api.lever.co",
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 71
+  },
+  {
+   "id": "lever:pigment",
+   "ats": "lever",
+   "slug": "pigment",
+   "company": "pigment",
+   "host": "api.lever.co",
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 126
+  },
+  {
+   "id": "lever:pnlfin",
+   "ats": "lever",
+   "slug": "pnlfin",
+   "company": "pnlfin",
+   "host": "api.eu.lever.co",
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 65
+  },
+  {
+   "id": "lever:prima",
+   "ats": "lever",
+   "slug": "prima",
+   "company": "prima",
+   "host": "api.eu.lever.co",
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 91
+  },
+  {
+   "id": "lever:quadcode",
+   "ats": "lever",
+   "slug": "quadcode",
+   "company": "quadcode",
+   "host": "api.eu.lever.co",
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 30
+  },
+  {
+   "id": "lever:radformation",
+   "ats": "lever",
+   "slug": "radformation",
+   "company": "radformation",
+   "host": "api.lever.co",
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 3
+  },
+  {
+   "id": "lever:rover",
+   "ats": "lever",
+   "slug": "rover",
+   "company": "rover",
+   "host": "api.lever.co",
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 26
+  },
+  {
+   "id": "lever:rws",
+   "ats": "lever",
+   "slug": "rws",
+   "company": "rws",
+   "host": "api.lever.co",
+   "regions": [
+    "spain",
+    "europe-remote"
+   ],
+   "jobs_at_scan": 132
+  },
+  {
+   "id": "lever:supercharge",
+   "ats": "lever",
+   "slug": "supercharge",
+   "company": "supercharge",
+   "host": "api.eu.lever.co",
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 3
+  },
+  {
+   "id": "lever:terrahq",
+   "ats": "lever",
+   "slug": "terrahq",
+   "company": "terrahq",
+   "host": "api.lever.co",
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 9
+  },
+  {
+   "id": "lever:tomtom",
+   "ats": "lever",
+   "slug": "tomtom",
+   "company": "tomtom",
+   "host": "api.eu.lever.co",
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 25
+  },
+  {
+   "id": "lever:tryjeeves",
+   "ats": "lever",
+   "slug": "tryjeeves",
+   "company": "tryjeeves",
+   "host": "api.lever.co",
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 77
+  },
+  {
+   "id": "lever:unlimit",
+   "ats": "lever",
+   "slug": "unlimit",
+   "company": "unlimit",
+   "host": "api.lever.co",
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 50
+  },
+  {
+   "id": "lever:veeva",
+   "ats": "lever",
+   "slug": "veeva",
+   "company": "veeva",
+   "host": "api.lever.co",
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 861
+  },
+  {
+   "id": "lever:viseven",
+   "ats": "lever",
+   "slug": "viseven",
+   "company": "viseven",
+   "host": "api.lever.co",
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 27
+  },
+  {
+   "id": "lever:weloglobal",
+   "ats": "lever",
+   "slug": "weloglobal",
+   "company": "weloglobal",
+   "host": "api.lever.co",
+   "regions": [
+    "spain",
+    "europe-remote"
+   ],
+   "jobs_at_scan": 444
+  },
+  {
+   "id": "lever:westernacher",
+   "ats": "lever",
+   "slug": "westernacher",
+   "company": "westernacher",
+   "host": "api.eu.lever.co",
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 88
+  },
+  {
+   "id": "lever:xsolla",
+   "ats": "lever",
+   "slug": "xsolla",
+   "company": "xsolla",
+   "host": "api.lever.co",
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 186
+  },
+  {
+   "id": "lever:xtb",
+   "ats": "lever",
+   "slug": "xtb",
+   "company": "xtb",
+   "host": "api.eu.lever.co",
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 48
+  },
+  {
+   "id": "lever:yuno",
+   "ats": "lever",
+   "slug": "yuno",
+   "company": "yuno",
+   "host": "api.lever.co",
+   "regions": [
+    "spain"
+   ],
+   "jobs_at_scan": 10
+  }
+ ]
+}

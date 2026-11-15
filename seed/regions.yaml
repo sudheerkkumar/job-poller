@@ -1,0 +1,15 @@
+# Region definitions used to tag seed boards (python -m jobpoller refresh-seed).
+# A board gets a region when at least one open job matches: any `locations` term in the job location
+# (case-insensitive), or - for `remote: true` regions - a remote job whose location names one of the terms.
+spain:
+  locations: [spain, españa, espana, madrid, barcelona, valencia, sevilla, seville, malaga, málaga, bilbao,
+              zaragoza, alicante, palma, las palmas, tenerife, granada, murcia, vigo, coruña, san sebastián, donostia]
+europe-remote:
+  remote: true
+  locations: [europe, emea, " eu", european union, cet, cest]
+germany:
+  locations: [germany, deutschland, berlin, munich, münchen, hamburg, frankfurt, cologne, köln, stuttgart]
+uk:
+  locations: [united kingdom, " uk", london, manchester, edinburgh, cambridge, bristol]
+us:
+  locations: [united states, " usa", new york, san francisco, seattle, austin, boston, chicago, los angeles]

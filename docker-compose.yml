@@ -1,0 +1,33 @@
+# docker compose up -d        -> Postgres + the poller
+# docker compose logs -f poller
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: jobpoller
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-jobpoller}
+      POSTGRES_DB: jobpoller
+    volumes:
+      - ./data/pg:/var/lib/postgresql/data      # your data stays in ./data on the host
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U jobpoller -d jobpoller"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    mem_limit: 256m
+
+  poller:
+    build: { context: ., target: app }
+    image: job-poller:local
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    env_file: .env
+    environment:
+      DATABASE_URL: postgresql://jobpoller:${POSTGRES_PASSWORD:-jobpoller}@db:5432/jobpoller
+      JOBPOLLER_CONFIG: /app/config.yaml
+    volumes:
+      - ./config.yaml:/app/config.yaml:ro
+    mem_limit: 512m

@@ -1,0 +1,50 @@
+# job-poller configuration. Copy to config.yaml and edit. Restart after changes: docker compose restart poller
+
+# Which shipped seed boards to watch (seed/boards.json): spain, europe-remote
+regions: [spain, europe-remote]
+
+# Companies you want watched. With a careers_url the job board behind the page is detected right away;
+# with only a name, the board is guessed from the name (daily discovery).
+companies:
+  - { name: "Aircall", careers_url: "https://aircall.io/careers/" }
+  - { name: "Stripe" }
+
+# Job boards you already know: <provider>:<slug>[@eu]
+# providers: greenhouse, lever, ashby, smartrecruiters, personio, teamtailor, recruitee
+boards:
+  - greenhouse:stripe
+
+job_boards:
+  interval_minutes: 15
+
+# Stage 1: cheap local rules before anything is sent to the LLM. Case/accent-insensitive substring matches.
+filters:
+  title_include_any: [backend, back-end, java, kotlin, python, golang, software engineer, developer, staff engineer,
+    principal engineer, tech lead, platform engineer]
+  title_exclude_any: [junior, intern, internship, trainee, graduate, frontend, front-end, qa, tester]
+  locations_accepted_any: [spain, españa, madrid, barcelona, valencia, sevilla, seville, malaga, bilbao, zaragoza]
+  remote_keywords_any: [remote, remoto, fully remote, work from home]
+  remote_regions_any: [europe, emea, eu, european union, cet]   # job boards: remote jobs must name one of these
+  company_blocklist: []
+
+# Stage 2: LLM screening (Gemini; free API key from https://aistudio.google.com/apikey -> GEMINI_API_KEY in .env)
+# Only public job postings and the text below are sent. Do not put private data here.
+scorer:
+  alert_threshold: 7          # notify at this score or higher
+  profile: |
+    Senior backend engineer, 8+ years. Java and Kotlin primary; Spring Boot, microservices, PostgreSQL, Kafka,
+    AWS, Kubernetes. Leads a small team. Based in Spain, open to relocating within Spain.
+  criteria: |
+    Wants senior or lead backend roles (individual contributor). Must be workable from Spain (on-site, hybrid,
+    or remote with Spain/EU eligibility). English or Spanish. Not interested in frontend-heavy or pure data roles.
+
+notify:
+  console: true               # Telegram is on automatically when TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID are set
+
+# OPT-IN: LinkedIn guest search. Off by default. LinkedIn's terms do not allow automated access - read
+# docs/linkedin.md and decide for yourself. Pacing floors (15 s between requests, 30 min between cycles,
+# max 60 requests/hour) are enforced in code and cannot be lowered here.
+linkedin:
+  enabled: false
+  searches:
+    - { keywords: "senior (backend OR java OR kotlin)", location: "Spain" }
